@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería F1 - Imágenes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(15, 15, 15, 0.8), rgba(28, 28, 28, 0.8)), 
+                  url('img/checo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(225, 6, 0, 0.9);
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    nav {
+      background: rgba(17, 17, 17, 0.9);
+      padding: 10px 0;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e10600;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.5s, box-shadow 0.5s;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      border: 2px solid #e10600;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(225, 6, 0, 0.8);
+    }
+    .videos {
+      margin-top: 40px;
+    }
+    .videos iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.5s;
+      border: 2px solid #e10600;
+    }
+    .videos iframe:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: rgba(17, 17, 17, 0.9);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+    }
+    h2 {
+      color: #e10600;
+      border-bottom: 2px solid #e10600;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Galería de la Fórmula 1</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="galeria.html">Galería</a>
+  <a href="campeones.html">Campeones</a>
+  <a href="f1.html">Videos epicos</a>
+  <a href="gif.html">Imagenes gif</a>
+</nav>
+
+<div class="container">
+
+  <section id="imagenes">
+    <h2>Imágenes de Alta Velocidad</h2>
+    <div class="gallery">
+      <img src="img/imagen11.jpg" alt="Carrera de Fórmula 1">
+      <img src="img/imagen12.jpg" alt="Gran Premio de Mónaco">
+      <img src="img/imagen14.jpg" alt="Pit Stop en carrera">
+      <img src="img/imagen15.jpg" alt="Max Verstappen celebrando">
+      <img src="img/imagen16.jpg" alt="Michael Schumacher">
+      <img src="img/imagen17.jpg" alt="Lewis Hamilton en acción">
+    </div>
+  </section>
+
+  <section id="imagenes">
+    <h2>Imagenes de los pilotos de F1</h2>
+    <div class="gallery">
+      <img src="img/piloto1.jpg" alt="piloto1">
+      <img src="img/piloto5.jpg" alt="piloto2">
+      <img src="img/piloto3.jpg" alt="piloto3">
+      <img src="img/piloto10.jpg" alt="piloto4">
+      <img src="img/piloto14.jpg" alt="piloto5">
+      <img src="img/piloto2.jpg" alt="piloto6">
+      <img src="img/piloto22.jpg" alt="piloto7">
+      <img src="img/piloto7.jpg" alt="piloto8">
+      <img src="img/piloto19.jpg" alt="piloto9">
+      <img src="img/piloto9.jpg" alt="piloto10">
+      <img src="img/piloto13.jpg" alt="piloto11">
+      <img src="img/piloto12.jpg" alt="piloto12">
+      <img src="img/piloto21.jpg" alt="piloto13">
+      <img src="img/piloto6.jpg" alt="piloto14">
+      <img src="img/piloto8.jpg" alt="piloto15">
+      <img src="img/piloto17.jpg" alt="piloto16">
+      <img src="img/piloto20.jpg" alt="piloto17">
+      <img src="img/piloto4.jpg" alt="piloto18">
+      <img src="img/piloto15.jpg" alt="piloto19">
+      <img src="img/piloto11.jpg" alt="piloto20">
+      <img src="img/piloto16.jpg" alt="21">
+
+
+
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 Fórmula 1 Galería - Creado por el autor: victor manuel mendez santiago.
+</footer>
+
+</body>
+</html>

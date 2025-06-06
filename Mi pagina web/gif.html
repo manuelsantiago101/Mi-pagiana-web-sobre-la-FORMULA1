@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagenes gif</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(15, 15, 15, 0.8), rgba(28, 28, 28, 0.8)), 
+                  url('img/checo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(225, 6, 0, 0.9);
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    nav {
+      background: rgba(17, 17, 17, 0.9);
+      padding: 10px 0;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e10600;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.5s, box-shadow 0.5s;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      border: 2px solid #e10600;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(225, 6, 0, 0.8);
+    }
+    .videos {
+      margin-top: 40px;
+    }
+    .videos iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.5s;
+      border: 2px solid #e10600;
+    }
+    .videos iframe:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: rgba(17, 17, 17, 0.9);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+    }
+    h2 {
+      color: #e10600;
+      border-bottom: 2px solid #e10600;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>IMAGENES GIF</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="galeria.html">Galería</a>
+  <a href="campeones.html">Campeones</a>
+  <a href="f1.html">Videos epicos</a>
+  <a href="gif.html">Imagenes gif</a>
+</nav>
+
+<div class="container">
+
+  <section id="imagenes">
+    <h2>Imágenes gif</h2>
+    <div class="gallery">
+      <img src="img/gif1.gif" alt="Carrera de Fórmula 1">
+      <img src="img/gif2.gif" alt="Gran Premio de Mónaco">
+      <img src="img/gif5.gif
+      " alt="Pit Stop en carrera">
+      <img src="img/gif7.gif" alt="Max Verstappen celebrando">
+      <img src="img/gif8.gif" alt="Michael Schumacher">
+      <img src="img/gif10.gif" alt="Lewis Hamilton en acción">
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Fórmula 1 Galería - Creado por el autor: victor manuel mendez santiago.
+</footer>
+
+</body>
+</html>

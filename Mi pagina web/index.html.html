@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fórmula 1 - Historia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(15, 15, 15, 0.8), rgba(28, 28, 28, 0.8)), 
+                  url('img/checo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
+    }
+    header {
+      background: #e10600; 
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    nav {
+      background: #111;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e10600;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+    .section img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      transition: transform 0.4s;
+    }
+    .section img:hover {
+      transform: scale(1.05);
+    }
+    .section .text {
+      flex: 1;
+    }
+    .section h2 {
+      color: #e10600;
+      margin-bottom: 10px;
+    }
+    .section p {
+      line-height: 1.8;
+      font-size: 18px;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+      .section img, .section .text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><marquee>LA HISTORIA DE LA F1</marquee></h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="galeria.html">Galería</a>
+  <a href="campeones.html">Campeones</a>
+  <a href="f1.html">Videos epicos</a>
+  <a href="gif.html">Imagenes gif</a>
+</nav>
+
+<audio autoplay loop id="bgmusic">
+  <source src="audio/musica1.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <div class="section">
+    <img src="img/imagen4.jpg" alt="Inicio de la Fórmula 1">
+    <div class="text">
+      <h2>¿Cómo comenzó la Fórmula 1?</h2>
+      <p>La <a href="https://www.formula1.com/">Fórmula 1</a> nació en 1950 con el primer Campeonato Mundial en Silverstone. Desde sus comienzos, ha sido un
+      símbolo de velocidad, ingeniería y pasión, donde los mejores pilotos se enfrentan en circuitos legendarios.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="text">
+      <h2>Décadas de Evolución</h2>
+      <p>Con el paso de los años, la Fórmula 1 evolucionó dramáticamente. Desde los años 60 hasta hoy, los avances en seguridad, aerodinámica y tecnología han hecho de la F1 el laboratorio de innovación automovilística más avanzado del mundo.</p>
+    </div>
+    <img src="img/imagen8.jpg" alt="Evolución de la F1">
+  </div>
+
+  <div class="section">
+    <img src="img/imagen3.jpg" alt="F1 moderna">
+    <div class="text">
+      <h2>La Fórmula 1 Moderna</h2>
+      <p>Hoy en día, los monoplazas utilizan sistemas híbridos ultracomplejos, alcanzando velocidades impresionantes. La competencia entre equipos como Mercedes, Red Bull y Ferrari es más intensa que nunca, brindando espectáculos únicos al público.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="text">
+      <h2>Impacto Cultural</h2>
+      <p>Más allá de las pistas, la F1 ha influido en la cultura pop, el cine y la moda. Con eventos glamorosos como el Gran Premio de Mónaco, la F1 es una plataforma global que trasciende el deporte para convertirse en un fenómeno cultural.</p>
+    </div>
+    <img src="img/imagen13.jpg" alt="Impacto cultural de la F1">
+  </div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('active');
+  }
+</script>
+
+</div>
+
+<footer>
+  &copy; 2025 Fórmula 1 Historia - Creado por el autor: victor manuel mendez santiago.
+</footer>
+
+</body>
+</html>
+
